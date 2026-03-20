@@ -9,7 +9,7 @@ palavras = [
 def sortear_palavra():
     return choice(palavras)
 def palavra_oculta(palavra):
-    oculta = []
-    for l in range(0, len(palavra)):
-        oculta.append('_')
+    oculta = ['_' for l in palavra]
+#    for l in range(0, len(palavra)):
+#        oculta.append('_')
     return oculta
