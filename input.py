@@ -8,7 +8,7 @@ palavra = palavras.sortear_palavra().upper()
 oculta = palavras.palavra_oculta(palavra)
 usadas = []
 vidas = 6
-sleep(2)
+sleep(1)
 while True:
     while True:
         for display in oculta:
@@ -45,8 +45,8 @@ while True:
         else:
             print('Já tem essa letra!')
         write.line()
-        sleep(2)
-    sleep(2)
+        sleep(1)
+    sleep(1)
     write.line()
     if vidas > 0:
         write.title('VOCÊ VENCEU!')
@@ -57,7 +57,7 @@ while True:
     while decidir not in ['S', 'N']:
         decidir = str(input('Deseja continuar[S/N]?')[0]).upper()
     if decidir == 'N':
-        sleep(2)
+        sleep(1)
         write.line()
         write.title('OBRIGADO POR JOGAR!')
         write.line()
@@ -67,7 +67,7 @@ while True:
         palavra = palavras.sortear_palavra().upper()
         oculta = palavras.palavra_oculta(palavra)
         usadas = []
-        sleep(2)
+        sleep(1)
         write.line()
         write.title('JOGO DA FORCA.')
         write.line()
